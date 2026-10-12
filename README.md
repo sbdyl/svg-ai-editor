@@ -7,7 +7,7 @@
 本地 SVG 工作室 · PNG 矢量重绘 · 选区 AI 修改 · 多处意见统一生成
 
 [![Windows](https://img.shields.io/badge/Windows_10%2F11-x64-354b36?style=for-the-badge&logo=windows)](https://github.com/sbdyl/svg-ai-editor/releases/latest)
-[![Release](https://img.shields.io/github/v/release/sbdyl/svg-ai-editor?style=for-the-badge&color=7d9360&label=DOWNLOAD)](https://github.com/sbdyl/svg-ai-editor/releases/latest)
+[![Release v1.0.0](https://img.shields.io/badge/DOWNLOAD-v1.0.0-7d9360?style=for-the-badge)](https://github.com/sbdyl/svg-ai-editor/releases/latest)
 [![SVG](https://img.shields.io/badge/Output-Editable_SVG-c38d63?style=for-the-badge)](public/sample.svg)
 
 [**下载桌面版**](https://github.com/sbdyl/svg-ai-editor/releases/latest) · [**观看介绍视频**](docs/media/figura-demo.mp4) · [**完整使用指南**](docs/guide.zh-CN.md) · [**反馈问题**](https://github.com/sbdyl/svg-ai-editor/issues)
