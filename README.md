@@ -28,7 +28,9 @@ Figura 面向论文插图、方法框架图和技术示意图。你可以从 PNG
 
 [![Figura 实际操作演示，点击观看完整视频](docs/media/demo-preview.gif)](docs/media/figura-demo.mp4)
 
-**[▶ 播放完整介绍视频](docs/media/figura-demo.mp4)** · **[下载 MP4](https://github.com/sbdyl/svg-ai-editor/releases/download/v1.0.0/figura-demo.mp4)**
+**[▶ 查看完整介绍视频](docs/media/figura-demo.mp4)** · **[下载 MP4](https://github.com/sbdyl/svg-ai-editor/releases/download/v1.0.0/figura-demo.mp4)**
+
+动态预览可直接在本页观看；完整 MP4 可从 Release 下载，或在视频文件页面点击「View raw」取得。
 
 真实界面录制：打开 SVG → 调整颜色与撤销 → 在两处选区添加意见 → 导出 SVG → 从历史项目继续。视频展示 AI 请求前的标注准备，未调用模型，也未用模拟结果冒充 AI 生成。
 
