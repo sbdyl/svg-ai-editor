@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="560" viewBox="0 0 1440 560">
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0 0L10 5L0 10" fill="none" stroke="#879773" stroke-width="1.5"/></marker></defs>
+<rect width="1440" height="560" rx="24" fill="#f4f6ed"/>
+<g font-family="Segoe UI,Arial,sans-serif">
+<text x="58" y="58" fill="#83936f" font-size="13" letter-spacing="4">THE FIGURA WORKFLOW</text>
+<text x="56" y="106" fill="#293b2d" font-size="32" font-weight="600">Keep the context. Refine the detail.</text>
+<g stroke="#d7dec9" fill="#fff"><rect x="56" y="154" width="290" height="254" rx="18"/><rect x="400" y="154" width="290" height="254" rx="18"/><rect x="746" y="154" width="290" height="254" rx="18"/><rect x="1090" y="154" width="294" height="254" rx="18"/></g>
+<g fill="#84926f" font-size="12" letter-spacing="3"><text x="80" y="187">01 / START</text><text x="424" y="187">02 / TARGET</text><text x="770" y="187">03 / REFINE</text><text x="1114" y="187">04 / KEEP</text></g>
+<g stroke="#8d9e77" fill="none" stroke-width="2" marker-end="url(#arrow)"><path d="M351 280H388"/><path d="M696 280H734"/><path d="M1042 280H1078"/></g>
+<g transform="translate(80 211)"><rect width="100" height="88" rx="8" fill="#eaf0df"/><path d="M10 70L34 36L57 60L75 45L91 70" fill="none" stroke="#9eb57e" stroke-width="3"/><circle cx="77" cy="20" r="8" fill="#d8ad83"/><text x="120" y="35" font-size="20" fill="#43553a">PNG / SVG</text><text x="120" y="61" font-size="15" fill="#859477">or a blank canvas</text></g>
+<g transform="translate(425 214)"><rect width="88" height="80" rx="8" fill="#eaf0df"/><rect x="108" width="130" height="80" rx="8" fill="#d8e5ba"/><rect x="103" y="-5" width="140" height="90" rx="3" fill="none" stroke="#7c965d" stroke-width="2" stroke-dasharray="5 4"/><circle cx="238" cy="0" r="14" fill="#cb9465"/><text x="234" y="5" font-size="14" fill="white">1</text></g>
+<g transform="translate(770 216)"><rect width="242" height="36" rx="9" fill="#edf1e5"/><text x="15" y="24" fill="#5c7147" font-size="14">Full figure + selected elements</text><rect y="47" width="242" height="36" rx="9" fill="#e0eacb"/><text x="15" y="71" fill="#4d6339" font-size="14">Your instructions + references</text></g>
+<g transform="translate(1114 220)" fill="none" stroke="#8ea473" stroke-width="2"><rect width="63" height="70" rx="7"/><path d="M18 26l-8 9 8 9m26-18 8 9-8 9M37 22L27 48"/><path d="M87 35h25" marker-end="url(#arrow)"/><rect x="140" width="99" height="70" rx="9" fill="#e8eedc"/><path d="M166 36l14 13 30-29" stroke-width="4"/></g>
+<g fill="#31442d" font-size="22" font-weight="600"><text x="80" y="343">Bring your figure</text><text x="424" y="343">Select + annotate</text><text x="770" y="343">Ask Codex</text><text x="1114" y="343">Preview + export</text></g>
+<g fill="#78866a" font-size="15"><text x="80" y="376">Reconstruct pixels as SVG</text><text x="424" y="376">Each note keeps its own scope</text><text x="770" y="376">Uses your configured model service</text><text x="1114" y="376">Apply, reject, or undo</text></g>
+<rect x="56" y="442" width="1328" height="70" rx="14" fill="#e7eddb"/>
+<text x="84" y="483" fill="#526742" font-size="17">LOCAL WORKSPACE</text><text x="307" y="483" fill="#728361" font-size="16">Your files + project history</text>
+<path d="M570 457V497" stroke="#becbab"/>
+<text x="606" y="483" fill="#526742" font-size="17">YOU STAY IN CONTROL</text><text x="862" y="483" fill="#728361" font-size="16">Review AI changes before they reach your canvas</text>
+</g></svg>

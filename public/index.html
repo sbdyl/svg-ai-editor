@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="zh-CN">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Figura — SVG 论文图像工作室</title><link rel="stylesheet" href="/style.css"><link rel="stylesheet" href="/motion.css"><link rel="stylesheet" href="/welcome.css"></head>
+<body class="at-home">
+  <main id="welcome" class="welcome">
+    <nav class="welcome-nav"><a class="brand" href="/" aria-label="Figura 首页"><span class="brand-icon">f<span>•</span></span>figura<span class="brand-label">SVG STUDIO</span></a><span class="welcome-nav-note"><i></i> A SPACE FOR CLEARER IDEAS</span><button id="welcome-open" class="button quiet">打开 SVG <span>↗</span></button></nav>
+    <section class="welcome-hero">
+      <div class="hero-copy"><p class="eyebrow">THINK IN FIGURES. CREATE IN VECTORS.</p><h1>让想法成形，<br>让细节<span>自由。</span></h1><p class="hero-description">从一张图片，到每一条可编辑的线。<br>为你的研究，留出精心创作的空间。</p><div class="hero-signature"><span class="signature-line"></span> YOUR NEXT FIGURE STARTS HERE</div></div>
+      <div class="hero-art" aria-hidden="true"><span class="art-coordinate coordinate-top">FIG. 01 / AN IDEA TAKES SHAPE</span><div class="art-halo"></div><svg class="hero-diagram" viewBox="0 0 560 350" fill="none"><defs><pattern id="hero-grid" width="20" height="20" patternUnits="userSpaceOnUse"><circle cx="1" cy="1" r=".8" fill="#bcb7ab" opacity=".45"/></pattern><linearGradient id="hero-paper" x2="1" y2="1"><stop stop-color="#fffefb"/><stop offset="1" stop-color="#f4f1e9"/></linearGradient></defs><rect width="560" height="350" fill="url(#hero-grid)"/><g class="diagram-sheet"><rect x="85" y="42" width="390" height="266" rx="12" fill="url(#hero-paper)" stroke="#e1ddd2"/><path d="M108 66H160M108 76H138" stroke="#c6c5b9" stroke-width="3" stroke-linecap="round"/><path class="draw-line" d="M188 159H248M312 159H373M405 189V243H156V189" stroke="#879888" stroke-width="1.5"/><path class="draw-line" d="m242 155 6 4-6 4m125-8 6 4-6 4M160 195l-4-6-4 6" stroke="#879888" stroke-width="1.5"/><g class="diagram-node node-one"><rect x="122" y="127" width="66" height="64" rx="12" fill="#eee4d5" stroke="#c6b79f"/><rect x="140" y="145" width="30" height="28" rx="4" stroke="#968873"/><path d="m142 169 9-10 7 6 7-8 4 5" stroke="#968873"/><circle cx="161" cy="152" r="3" fill="#b6a387"/></g><g class="diagram-node node-two"><rect x="248" y="127" width="66" height="64" rx="12" fill="#f4ded1" stroke="#c98466"/><path d="m268 147 14-7 14 7v22l-14 7-14-7ZM268 147l14 8 14-8m-14 8v21" stroke="#bb7658" stroke-width="1.5"/></g><g class="diagram-node node-three"><rect x="373" y="127" width="66" height="64" rx="12" fill="#e7eee5" stroke="#91a38d"/><circle cx="406" cy="159" r="15" stroke="#798e77"/><path d="m399 159 5 5 10-11" stroke="#798e77" stroke-width="2"/></g><g class="diagram-labels" fill="#8b8b7e" font-size="9" font-family="Segoe UI, sans-serif" letter-spacing="1.2"><text x="130" y="214">REFERENCE</text><text x="259" y="214">REFINE</text><text x="384" y="214">CREATE</text></g><g class="diagram-selection" stroke="#ca7958"><rect x="240" y="119" width="82" height="80" stroke-dasharray="3 4"/><rect x="237" y="116" width="6" height="6" fill="white"/><rect x="319" y="116" width="6" height="6" fill="white"/><rect x="237" y="196" width="6" height="6" fill="white"/><rect x="319" y="196" width="6" height="6" fill="white"/></g></g><g class="diagram-cursor"><path d="m332 214 1 24 7-7 9-1Z" fill="#4e5c4b" stroke="#fff" stroke-width="2"/><rect x="349" y="236" width="77" height="24" rx="12" fill="#4e5c4b"/><text x="361" y="252" fill="white" font-size="10" font-family="Segoe UI, sans-serif">Make it yours</text></g></svg><span class="art-coordinate coordinate-bottom">NATIVE SVG · ENDLESS POSSIBILITIES <span>↗</span></span></div>
+    </section>
+    <section class="create-grid" aria-label="创建项目"><button id="welcome-png" class="create-card primary-card"><span class="card-icon">▧</span><span class="create-copy"><small>01 / RECONSTRUCT</small><strong>从 PNG 新建</strong><span>把图片里的结构，变成可编辑的细节</span></span><span class="card-arrow">↗</span></button><button id="welcome-blank" class="create-card"><span class="card-icon">＋</span><span class="create-copy"><small>02 / CREATE</small><strong>建立空白项目</strong><span>一张干净的画布，一个新的想法</span></span><span class="card-arrow">↗</span></button></section>
+    <section class="recent-section"><div class="recent-heading"><div><span class="eyebrow">PICK UP WHERE YOU LEFT OFF</span><h2>最近的创作</h2></div><span id="project-count">本机项目</span></div><div id="recent-projects" class="recent-grid"></div><div id="recent-empty" class="recent-empty"><span>✧</span><p>你的下一幅作品，从这里开始。<small>新建项目后，画布与修改意见会自动保存在这里。</small></p></div></section>
+    <footer class="welcome-footer"><span>FIGURA / MADE FOR DISCOVERY</span><span>每一个细节，都值得精心表达。</span></footer>
+  </main>
+  <div id="studio" hidden>
+  <header class="topbar">
+    <a class="brand" href="/" aria-label="Figura 首页"><span class="brand-icon">f<span>•</span></span>figura<span class="brand-label">SVG STUDIO</span></a>
+    <div class="document"><span class="file-icon">▧</span><span id="filename">method-overview.svg</span><span class="file-dot"></span><span id="save-state">本地工作区</span></div>
+    <div class="header-actions"><button id="go-home" class="button quiet">返回首页</button><button id="new-file" class="button quiet">＋ 新建</button><button id="save-file" class="button quiet" title="保存到文件 (Ctrl+S)">保存</button><button id="save-as" class="button quiet" title="另存为 (Ctrl+Shift+S)">另存为</button><button id="import" class="button quiet" data-icon="upload">导入 SVG</button><button id="export" class="button dark" data-icon="download">导出 SVG</button></div>
+  </header>
+  <div class="workspace">
+    <nav class="toolrail" aria-label="编辑工具">
+      <button class="tool active" data-tool="select" data-icon="cursor" title="选择元素 (V)" aria-label="选择元素"></button>
+      <button class="tool" data-tool="region" data-icon="region" title="区域框选 (M)" aria-label="区域框选"></button>
+      <button class="tool" data-tool="hand" data-icon="hand" title="移动画布 (H / 空格)" aria-label="移动画布"></button>
+      <div class="rail-divider"></div>
+      <button class="tool" id="undo" data-icon="undo" title="撤销 (Ctrl+Z)" aria-label="撤销"></button>
+      <button class="tool" id="redo" data-icon="redo" title="重做 (Ctrl+Shift+Z)" aria-label="重做"></button>
+      <div class="rail-divider"></div>
+      <button class="tool" id="code" data-icon="code" title="查看 SVG 源码" aria-label="查看源码"></button>
+      <button class="tool" id="help" data-icon="help" title="使用帮助" aria-label="使用帮助"></button>
+      <span class="rail-bottom">F</span>
+    </nav>
+    <aside class="layers panel">
+      <div class="panel-heading"><h2>图层</h2><span id="layer-count" class="count">0</span><button id="collapse-all" class="icon-button" data-icon="layers" title="折叠 / 展开全部" aria-label="折叠图层"></button></div>
+      <label class="search" data-icon="search"><input id="layer-search" placeholder="查找元素…" aria-label="查找元素"><kbd>⌕</kbd></label>
+      <div class="layer-document"><span data-icon="file"></span><span id="tree-filename">Method overview</span><span class="svg-tag">SVG</span></div>
+      <div id="layer-tree" class="layer-tree" role="tree" aria-label="SVG 元素"></div>
+      <div class="layers-footer"><span class="small-dot"></span>每个细节，都可编辑<span id="element-total"></span></div>
+    </aside>
+    <main class="editor">
+      <div class="canvas-toolbar"><div class="breadcrumb">工作区 <span>/</span> <strong>论文插图</strong></div><div class="canvas-actions"><span class="canvas-mode"><span class="small-dot"></span>矢量编辑</span><button id="fit" class="mini-button" data-icon="fit">适应画布</button></div></div>
+      <div id="viewport" class="viewport">
+        <div class="canvas-caption"><span>FIGURE 01</span><span id="artboard-size">1000 × 640</span></div>
+        <img id="png-preview" class="png-preview" alt="PNG 原图参考" hidden>
+        <div id="artboard" class="artboard"></div>
+        <div id="selection-overlay" class="selection-overlay"></div>
+        <div id="annotation-overlay" class="annotation-overlay" aria-label="画布修改标记"></div>
+        <div id="marquee" class="marquee" hidden></div>
+        <div id="empty-hint" class="canvas-hint"><span data-icon="cursor"></span>点击一个元素，开始创作 <span class="hint-separator">·</span> 或按 <kbd>M</kbd> 框选区域</div>
+        <div class="zoom-controls"><button id="zoom-out" aria-label="缩小">−</button><button id="zoom-value" title="点击恢复 100%">100%</button><button id="zoom-in" aria-label="放大">+</button><span></span><button id="zoom-fit" data-icon="fit" aria-label="适应画布"></button></div>
+        <span class="canvas-corner">DESIGNED FOR DISCOVERY</span>
+      </div>
+        <section id="ai-panel" class="ai-panel" aria-label="AI 修改">
+          <span class="sr-only" id="ai-selection">已选择 1 个元素</span><span class="sr-only" id="ai-scope">仅修改选中元素</span>
+          <div id="png-source" class="png-source" hidden><span><strong>PNG → 可编辑 SVG</strong><small id="png-name"></small><small>确认原图和重绘规则，可补充要求后创建并生成</small></span><button id="create-generate" type="button" class="button accent">创建并生成</button><button id="remove-png" class="mini-button" type="button">退出</button></div>
+          <div class="context-files"><div id="context-list" class="context-list"></div><p id="context-note" hidden>参考文件仅保留在本次页面会话 · 最多 10 个，合计 20 MB</p></div>
+          <details id="reconstruction-rules" class="reconstruction-rules" hidden><summary>重绘规则 · 文字、框线与主体图形逐个绘制</summary><p id="reconstruction-text"></p></details>
+          <div id="ai-workflow" class="ai-workflow" hidden><ol><li data-stage="prepare">准备输入</li><li data-stage="generate">AI 生成</li><li data-stage="validate">校验结果</li><li data-stage="preview">预览确认</li></ol><div class="workflow-track"><span></span></div><p><span id="workflow-message" role="status"></span><time id="workflow-time"></time></p></div>
+          <div class="annotation-heading"><span id="annotation-hint">选中或框选一处，输入意见后添加修改</span><span id="annotation-count" aria-live="polite">0 条修改</span></div>
+          <form id="ai-form" class="composer">
+            <button id="clear-selection" class="composer-spark" type="button" data-icon="sparkles" title="取消选择" aria-label="取消选择"></button>
+            <textarea id="ai-prompt" rows="1" placeholder="写下这处的修改意见…" aria-label="AI 修改要求" aria-describedby="ai-selection ai-scope"></textarea>
+            <button id="add-file" class="button quiet" type="button" title="添加参考文件或拖动文件到页面">＋ 添加文件</button>
+            <button id="add-annotation" class="button quiet" type="button" title="添加这处修改 (Enter)">＋ 添加修改</button>
+            <div class="composer-controls">
+              <select id="ai-model" aria-label="Codex 模型"><option value="">跟随 CLI 配置</option><option value="__custom">自定义模型…</option></select>
+              <input id="ai-custom-model" aria-label="自定义模型 ID" placeholder="模型 ID" hidden>
+              <span class="composer-divider" aria-hidden="true"></span>
+              <select id="ai-effort" aria-label="思考强度"><option value="">跟随 CLI 配置</option></select>
+              <button id="ai-submit" class="send-button" type="submit" data-icon="arrow-up" title="生成修改 (Ctrl+Enter)" aria-label="生成修改"></button>
+              <button id="ai-cancel" class="mini-button" type="button" hidden>取消</button>
+            </div>
+          </form>
+          <ol id="annotation-list" class="annotation-list" aria-label="待生成的修改意见" hidden></ol>
+          <div id="ai-feedback" class="ai-feedback" role="status" hidden></div>
+          <div id="preview-actions" class="preview-actions" hidden><button id="compare" class="button quiet">查看原图</button><button id="vectors-only" class="button quiet" aria-pressed="false">仅看矢量结构</button><span class="spacer"></span><button id="reject" class="button quiet">放弃</button><button id="apply" class="button accent">应用修改</button></div>
+        </section>
+      <footer class="statusbar"><span id="tool-hint">选择工具 <span>·</span> Shift + 点击多选，拖动元素移动</span><span id="selection-status">未选择元素</span></footer>
+    </main>
+    <aside class="inspector panel">
+      <div class="panel-heading"><h2>属性</h2><span class="inspector-label">DESIGN</span></div>
+      <div id="document-properties"><div class="property-section"><div class="section-heading">画布 <span data-icon="artboard"></span></div><p class="muted">可编辑的矢量图像</p><div class="dimensions"><label>W <input id="canvas-width" readonly></label><label>H <input id="canvas-height" readonly></label></div></div><div class="inspector-empty"><div class="empty-icon" data-icon="cursor"></div><h3>让想法，精准落笔</h3><p>选中画布中的任意元素<br>调整颜色、描边与文字<br>或交给 AI 完成修改</p></div><div class="tip-card"><span data-icon="sparkles"></span><strong>从局部开始</strong><p>框选图中的一组元素，让 AI 统一配色或调整细节。</p><button id="try-region">试试区域框选 <span>↗</span></button></div></div>
+      <div id="element-properties" hidden>
+        <div class="property-section"><div class="section-heading"><span id="selected-type">元素</span><span id="selected-tag" class="svg-tag">RECT</span></div><p id="selected-name" class="muted element-name"></p><div class="dimensions"><label>W <input id="element-width" readonly></label><label>H <input id="element-height" readonly></label></div></div>
+        <div class="property-section"><div class="section-heading">外观</div><label class="property-label">填充 <span id="fill-mixed"></span></label><div class="color-field"><input id="fill-picker" type="color" value="#5d8275" aria-label="填充颜色"><input id="fill-value" placeholder="如 #5D8275 / none" aria-label="填充色值"></div><label class="property-label">描边</label><div class="color-field"><input id="stroke-picker" type="color" value="#000000" aria-label="描边颜色"><input id="stroke-value" placeholder="如 #000000 / none" aria-label="描边色值"></div><div class="property-row"><label>线宽<input id="stroke-width" type="number" min="0" max="100" step="0.5" aria-label="描边宽度"></label><label>不透明度 %<input id="opacity" type="number" min="0" max="100" aria-label="不透明度"></label></div><div class="section-subtitle">论文配色</div><div id="palette" class="palette"></div></div>
+        <div id="text-properties" class="property-section" hidden><div class="section-heading">文字</div><textarea id="text-content" rows="2" aria-label="文字内容"></textarea><div class="property-row"><label>字号<input id="font-size" type="number" min="1" max="500" aria-label="字号"></label><label>字体<select id="font-family" aria-label="字体"><option>Arial</option><option>Times New Roman</option><option>Georgia</option><option>Helvetica</option><option>sans-serif</option></select></label></div></div>
+        <div class="property-section"><div class="section-heading">元素操作</div><div class="element-actions"><button id="extract" class="button quiet" data-icon="download">导出选区</button><button id="ungroup" class="button quiet" data-icon="ungroup">取消编组</button><button id="delete" class="button quiet danger" data-icon="trash">删除元素</button></div></div>
+      </div>
+      <div class="inspector-footer"><span id="cli-status" class="cli-status">正在检测 Codex CLI…</span><span>草稿自动保存 · Ctrl+S 写入文件</span></div>
+    </aside>
+  </div>
+  </div>
+  <dialog id="create-dialog" class="create-dialog"><div class="modal-heading"><h2>开始新的创作</h2><button id="create-close" class="icon-button" aria-label="关闭新建窗口">×</button></div><p class="muted">选择起点，剩下的交给你的想法。</p><div class="create-grid"><button id="create-png" class="create-card primary-card"><span class="card-icon">▧</span><span class="create-copy"><strong>从 PNG 新建</strong><span>重建为可编辑 SVG</span></span></button><button id="create-blank" class="create-card"><span class="card-icon">＋</span><span class="create-copy"><strong>建立空白项目</strong><span>从干净画布开始</span></span></button></div></dialog>
+  <input type="file" id="context-input" multiple hidden>
+  <input type="file" id="png-input" accept=".png,image/png" hidden>
+  <input type="file" id="file-input" accept=".svg,image/svg+xml" hidden>
+  <dialog id="file-dialog" class="file-dialog">
+    <div class="modal-heading"><h2 id="file-dialog-title">新建 SVG</h2><button id="file-dialog-close" class="icon-button" aria-label="关闭文件窗口">×</button></div>
+    <form id="file-form">
+      <label class="file-label">文件名<input id="file-name" required maxlength="180" placeholder="figure-01.svg"></label>
+      <label id="directory-label" class="file-label">保存文件夹<div class="folder-input"><input id="file-directory" required placeholder="输入文件夹的绝对路径"><button id="browse-folder" type="button" class="button quiet">浏览…</button></div></label>
+      <div id="folder-browser" hidden><div class="folder-browser-heading"><button id="folder-parent" class="mini-button" type="button">↑ 上一级</button><span id="folder-current"></span></div><div id="folder-list"></div><button id="folder-choose" type="button" class="button quiet">使用此文件夹</button></div>
+      <div id="new-file-options"><div class="property-row"><label>宽度 (px)<input id="new-width" type="number" min="1" max="10000" value="1000" required></label><label>高度 (px)<input id="new-height" type="number" min="1" max="10000" value="640" required></label><label>背景<select id="new-background"><option value="white">白色</option><option value="transparent">透明</option></select></label></div></div>
+      <p class="file-note" id="file-note">项目画布与修改意见自动保存，随时返回首页继续创作。</p>
+      <p id="file-error" class="file-error" role="alert" hidden></p>
+      <div class="file-dialog-actions"><button id="file-cancel" type="button" class="button quiet">取消</button><button id="file-confirm" type="submit" class="button accent">创建 SVG</button></div>
+    </form>
+  </dialog>
+  <div id="toast" class="toast" role="status" hidden></div>
+  <dialog id="modal"><div class="modal-heading"><h2 id="modal-title"></h2><button id="modal-close" class="icon-button" data-icon="close" aria-label="关闭"></button></div><div id="modal-content"></div></dialog>
+  <script type="module" src="/app.js"></script>
+</body>
+</html>

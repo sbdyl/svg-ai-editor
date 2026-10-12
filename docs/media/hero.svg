@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="610" viewBox="0 0 1440 610">
+<defs>
+ <pattern id="dots" width="28" height="28" patternUnits="userSpaceOnUse"><circle cx="1" cy="1" r="1" fill="#bac8a9" opacity=".3"/></pattern>
+ <linearGradient id="bg" x2="1" y2="1"><stop stop-color="#17291f"/><stop offset="1" stop-color="#394832"/></linearGradient>
+ <linearGradient id="card" x2="0" y2="1"><stop stop-color="#f9faf1"/><stop offset="1" stop-color="#e9eedb"/></linearGradient>
+</defs>
+<rect width="1440" height="610" rx="28" fill="url(#bg)"/><rect width="1440" height="610" rx="28" fill="url(#dots)"/>
+<g font-family="Segoe UI,Arial,sans-serif">
+ <text x="78" y="82" fill="#c6d4aa" font-size="14" letter-spacing="5">FIGURA / SVG STUDIO</text>
+ <text x="72" y="226" fill="#f4f5e9" font-size="114" font-weight="650" letter-spacing="-7">Ideas,</text>
+ <text x="72" y="342" fill="#d3e5a1" font-size="114" font-weight="650" letter-spacing="-7">made editable.</text>
+ <text x="80" y="405" fill="#d5ddc8" font-size="22">A local canvas for scientific figures.</text>
+ <text x="80" y="441" fill="#aebfa2" font-size="20">Reconstruct. Select. Refine. Export.</text>
+ <rect x="80" y="492" width="173" height="39" rx="20" fill="#d3e5a1"/><text x="103" y="517" fill="#293b2d" font-size="14" font-weight="700">WINDOWS DESKTOP</text>
+ <text x="276" y="517" fill="#c8d2b8" font-size="14" letter-spacing="2">LOCAL FILES · CODEX AI · SVG</text>
+</g>
+<g transform="translate(965 126) rotate(7)">
+ <rect x="-20" y="-24" width="370" height="380" rx="22" fill="#112218" opacity=".6"/>
+ <rect width="350" height="344" rx="18" fill="url(#card)"/>
+ <path d="M0 42H350" stroke="#cfd8c0"/><circle cx="22" cy="21" r="4" fill="#dfa877"/><circle cx="37" cy="21" r="4" fill="#b0c29b"/><circle cx="52" cy="21" r="4" fill="#d1dbc3"/>
+ <g fill="none" stroke="#8ba371" stroke-width="2"><path d="M66 151H150V108H230M150 151V242H230"/><path d="M150 151H275"/></g>
+ <g fill="#e3ebd5" stroke="#9aaf82"><rect x="30" y="125" width="77" height="52" rx="9"/><rect x="218" y="82" width="101" height="52" rx="9"/><rect x="218" y="218" width="101" height="52" rx="9"/></g>
+ <rect x="129" y="124" width="81" height="61" rx="10" fill="#aec486"/>
+ <rect x="119" y="114" width="101" height="81" rx="3" fill="none" stroke="#708c4f" stroke-dasharray="4 4"/>
+ <g fill="#f9faf1" stroke="#708c4f" stroke-width="2"><rect x="115" y="110" width="8" height="8"/><rect x="216" y="110" width="8" height="8"/><rect x="115" y="191" width="8" height="8"/><rect x="216" y="191" width="8" height="8"/></g>
+ <circle cx="226" cy="114" r="15" fill="#cf9667"/><text x="222" y="119" font-family="Arial" font-size="14" fill="white">1</text>
+ <path d="M41 305H146M41 316H99" stroke="#a0ae90" stroke-width="5" stroke-linecap="round"/>
+ <path d="M182 162l9 31 6-12 14-3z" fill="#354930" stroke="#fff" stroke-width="2"/>
+</g>
+</svg>

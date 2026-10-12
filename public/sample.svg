@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="640" viewBox="0 0 1000 640" fill="none">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#95a18e"/></marker>
+    <pattern id="grid" width="15" height="15" patternUnits="userSpaceOnUse"><path d="M 15 0 L 0 0 0 15" fill="none" stroke="#e5eade" stroke-width="0.7"/></pattern>
+  </defs>
+  <g id="figure-heading" aria-label="图标题" font-family="Arial, sans-serif">
+    <text id="figure-kicker" x="55" y="52" fill="#9aa58d" font-size="11" letter-spacing="2">PROPOSED FRAMEWORK</text>
+    <text id="figure-title" x="55" y="91" fill="#35432f" font-size="27" font-weight="600">Learning to see. Planning to move.</text>
+    <text id="figure-subtitle" x="55" y="118" fill="#98a08f" font-size="12">A unified perception-to-action pipeline for autonomous navigation</text>
+    <path id="heading-divider" d="M55 143H945" stroke="#e7ebdf"/>
+  </g>
+  <g id="input-module" aria-label="01 · 多模态输入" font-family="Arial, sans-serif">
+    <text id="input-number" x="55" y="183" fill="#a4ad99" font-size="11">01</text><text id="input-label" x="80" y="183" fill="#59694e" font-size="12" font-weight="600">Observation</text>
+    <rect id="input-card" x="55" y="202" width="225" height="249" rx="10" fill="#f6f7f1" stroke="#e1e6d7"/>
+    <g id="scene" aria-label="场景示意">
+      <rect id="scene-frame" x="74" y="222" width="187" height="130" rx="5" fill="#edf1e5"/>
+      <path id="mountain-back" d="M74 313L118 260L177 321L218 278L261 320V352H74Z" fill="#d8e0cd"/>
+      <path id="mountain-front" d="M74 334L131 284L192 345L228 317L261 342V352H74Z" fill="#b9c9a9"/>
+      <circle id="sun" cx="222" cy="246" r="9" fill="#e0b980"/>
+      <path id="scan-line" d="M162 230V345M83 291H252" stroke="#93a77f" stroke-dasharray="4 4" opacity="0.5"/>
+      <rect id="target-box" x="112" y="257" width="67" height="63" rx="2" stroke="#849d6e" stroke-width="1.5" fill="none"/>
+    </g>
+    <text id="rgb-label" x="75" y="375" fill="#718163" font-size="11">RGB observation</text><text id="rgb-shape" x="259" y="375" text-anchor="end" fill="#a3ad98" font-size="9">H × W × 3</text>
+    <path id="input-divider" d="M75 389H260" stroke="#e0e6d6"/>
+    <g id="point-cloud" aria-label="点云" fill="#b0bea0"><circle cx="82" cy="414" r="2"/><circle cx="91" cy="420" r="2"/><circle cx="101" cy="409" r="2"/><circle cx="109" cy="421" r="2"/><circle cx="91" cy="405" r="2"/><circle cx="117" cy="412" r="2"/><circle cx="103" cy="429" r="2"/><circle cx="81" cy="428" r="2"/></g>
+    <text id="depth-label" x="135" y="419" fill="#718163" font-size="11">Depth + proprioception</text>
+  </g>
+  <g id="encoder-module" aria-label="02 · 特征编码" font-family="Arial, sans-serif">
+    <text id="encoder-number" x="335" y="183" fill="#a4ad99" font-size="11">02</text><text id="encoder-label" x="360" y="183" fill="#59694e" font-size="12" font-weight="600">Representation</text>
+    <rect id="encoder-card" x="335" y="202" width="285" height="249" rx="10" fill="#f4f6f1" stroke="#dde5d5"/>
+    <g id="feature-stack" aria-label="特征层">
+      <path id="feature-back" d="M391 251L477 225L563 251L477 277Z" fill="#dce5d3" stroke="#b9c9ac"/>
+      <path id="feature-middle" d="M391 270L477 244L563 270L477 296Z" fill="#c4d6ba" stroke="#a1b998"/>
+      <path id="feature-front" d="M391 289L477 263L563 289L477 315Z" fill="#9fb995" stroke="#89a57e"/>
+      <path id="feature-grid" d="M420 280L506 306M449 271L535 298M420 298L506 271M449 307L535 280" stroke="#c7d9bd" stroke-width="1"/>
+    </g>
+    <text id="encoder-title" x="477" y="345" text-anchor="middle" fill="#5e7651" font-size="14" font-weight="600">Spatial encoder</text>
+    <text id="encoder-description" x="477" y="366" text-anchor="middle" fill="#97a48b" font-size="10">Geometry-aware feature learning</text>
+    <rect id="latent-pill" x="390" y="389" width="175" height="32" rx="5" fill="#e6ecdf"/>
+    <text id="latent-label" x="477" y="409" text-anchor="middle" fill="#798d6a" font-size="11">Latent representation  zₜ</text>
+  </g>
+  <g id="policy-module" aria-label="03 · 运动规划" font-family="Arial, sans-serif">
+    <text id="policy-number" x="675" y="183" fill="#a4ad99" font-size="11">03</text><text id="policy-label" x="700" y="183" fill="#59694e" font-size="12" font-weight="600">Action</text>
+    <rect id="policy-card" x="675" y="202" width="270" height="249" rx="10" fill="#fbf6ed" stroke="#eee1cd"/>
+    <rect id="map-grid" x="698" y="224" width="224" height="130" rx="4" fill="url(#grid)"/>
+    <rect id="obstacle-a" x="741" y="237" width="34" height="42" rx="4" fill="#e4decf"/><rect id="obstacle-b" x="829" y="291" width="42" height="42" rx="4" fill="#e4decf"/>
+    <path id="planned-path" d="M720 330C750 329 745 298 788 299S809 250 840 251S878 260 902 239" stroke="#c89a56" stroke-width="3" stroke-linecap="round" fill="none"/>
+    <circle id="start-point" cx="720" cy="330" r="5" fill="#c89a56" stroke="#fff" stroke-width="2"/><circle id="goal-point" cx="902" cy="239" r="6" fill="#fff" stroke="#c89a56" stroke-width="2"/>
+    <text id="policy-title" x="810" y="384" text-anchor="middle" fill="#937949" font-size="14" font-weight="600">Motion policy</text>
+    <text id="policy-description" x="810" y="406" text-anchor="middle" fill="#b4a385" font-size="10">Collision-free trajectory generation</text>
+    <text id="policy-formula" x="810" y="430" text-anchor="middle" fill="#b6a07c" font-size="12" font-style="italic">π(aₜ | zₜ, g)</text>
+  </g>
+  <g id="connections" aria-label="数据流连接" stroke="#95a18e" stroke-width="1.4" fill="none">
+    <path id="connection-input" d="M284 322H327" marker-end="url(#arrow)"/><path id="connection-output" d="M624 322H667" marker-end="url(#arrow)"/>
+    <path id="feedback-loop" d="M810 462V489Q810 499 800 499H488Q477 499 477 489V462" stroke-dasharray="4 4" marker-end="url(#arrow)"/>
+  </g>
+  <g id="figure-notes" aria-label="图例与说明" font-family="Arial, sans-serif">
+    <rect id="feedback-label-bg" x="574" y="488" width="144" height="21" fill="white"/><text id="feedback-label" x="646" y="502" text-anchor="middle" fill="#9ba58f" font-size="10">End-to-end optimization</text>
+    <path id="footer-divider" d="M55 539H945" stroke="#e7ebdf"/>
+    <circle id="legend-perception-dot" cx="61" cy="565" r="4" fill="#a5bc96"/><text id="legend-perception" x="74" y="569" fill="#8b987c" font-size="10">Perception</text>
+    <circle id="legend-planning-dot" cx="168" cy="565" r="4" fill="#cbaa75"/><text id="legend-planning" x="181" y="569" fill="#8b987c" font-size="10">Planning</text>
+    <text id="figure-index" x="945" y="569" text-anchor="end" fill="#9ca78f" font-size="10">FIG. 01 / METHOD OVERVIEW</text>
+    <text id="figure-caption" x="55" y="603" fill="#adb5a3" font-size="10">From multimodal observations to structured representations and goal-conditioned actions.</text>
+  </g>
+</svg>

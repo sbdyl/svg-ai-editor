@@ -1,0 +1,76 @@
+{
+  "name": "figura-svg-studio",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node server.js",
+    "test": "node --test tests/server.test.js && playwright test",
+    "test:ui": "playwright test",
+    "desktop": "electron .",
+    "dist:win": "electron-builder --win nsis portable --x64 --publish never",
+    "test:desktop": "node scripts/smoke-desktop.mjs"
+  },
+  "dependencies": {
+    "@napi-rs/canvas": "^1.0.11",
+    "@xmldom/xmldom": "^0.9.12",
+    "dompurify": "^3.2.7",
+    "mammoth": "^1.13.0",
+    "pdfjs-dist": "^6.4.299",
+    "word-extractor": "^1.0.4"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.55.0",
+    "electron": "44.7.0",
+    "electron-builder": "26.15.3"
+  },
+  "description": "A local SVG studio for scientific figures, with selection-scoped AI editing.",
+  "author": "sbdyl",
+  "main": "desktop/main.cjs",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sbdyl/svg-ai-editor.git"
+  },
+  "engines": {
+    "node": ">=22.13.0"
+  },
+  "build": {
+    "appId": "io.github.sbdyl.figura",
+    "productName": "Figura SVG Studio",
+    "directories": {
+      "output": "release"
+    },
+    "asar": true,
+    "asarUnpack": [
+      "node_modules/@napi-rs/**/*"
+    ],
+    "files": [
+      "desktop/**/*",
+      "build/icon.png",
+      "public/**/*",
+      "*.js",
+      "package.json",
+      "!playwright.config.js"
+    ],
+    "npmRebuild": false,
+    "win": {
+      "icon": "build/icon.ico",
+      "target": [
+        "nsis",
+        "portable"
+      ]
+    },
+    "nsis": {
+      "oneClick": false,
+      "perMachine": false,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true,
+      "artifactName": "Figura-SVG-Studio-1.0.0-x64-Setup.exe"
+    },
+    "portable": {
+      "requestExecutionLevel": "user",
+      "artifactName": "Figura-SVG-Studio-1.0.0-x64-Portable.exe"
+    }
+  }
+}

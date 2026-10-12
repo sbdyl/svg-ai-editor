@@ -1,0 +1,12 @@
+node_modules/
+test-results/
+playwright-report/
+.DS_Store
+*.log
+release/
+artifacts/
+outputs/
+.release-work/
+.env
+.env.*
+docs/media/*.webm
